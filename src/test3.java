@@ -22,7 +22,6 @@ public class test3 {
     public static void main(String[] args) {
         long num = 123334567;
         boolean result = digits(num);
-
         if (result) {
             System.out.println("რიცხვი შეიცავს სამ ერთნაირ ციფრს.");
         } else {

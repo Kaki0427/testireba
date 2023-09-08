@@ -1,12 +1,20 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int radius = scanner.nextInt();
-        double perimeter = 2 * radius * Math.PI;
-        double area = radius * radius * Math.PI;
-        System.out.println("Perimeter: " + perimeter);
-        System.out.println("Area: " + area);
+
+        try {
+            int [] array = {1,2,3};
+            System.out.println(array[10]);
+            System.out.println(10/1);
+            Main2 fraction = null;
+            fraction.toString();
+        }catch (ArithmeticException | NullPointerException e){
+            System.out.println(e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Index exception");
+        }
+
+
+        System.out.println("After");
+
     }
 }
